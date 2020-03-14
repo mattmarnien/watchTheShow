@@ -7,8 +7,8 @@ const show = {
             cb(data);
         })
     },
-    update: function(id,cb){
-        orm.update("shows", "watched", 1, "id", id, (data) => {
+    update: function(column, id, val, cb){
+        orm.update("shows", column, val, "id", id, (data) => {
             cb(data);
         })
     },

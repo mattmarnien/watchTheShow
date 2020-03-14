@@ -19,6 +19,40 @@
     
     color:  #e05b49;;
 }
+.showDiv {
+    margin: 5px;
+}
+.nameDiv{
+    font-size: large;;
+    font-weight: bold;
+}
+
+.changeWatched {
+    color: white ;
+    background-color: cornflowerblue;
+}
+
+.archive{
+    color: white ;
+    background-color: #e05b49;
+
+}
+
+.toArchive{
+    color: white ;
+    background-color: #e05b49;
+
+}
+
+.toIndex {
+    color: white ;
+    background-color: cornflowerblue;
+}
+.backToWatchList {
+    color: white ;
+    background-color: #e05b49;
+
+}
 @media (max-width: 770px){
     #jumbo {
         height: 200px;
@@ -35,6 +69,10 @@
     .tvIcon {
         height: 50px;
         width: 50px;
+    }
+    .nameDiv {
+        font-size: small !important;
+
     }
 
 }

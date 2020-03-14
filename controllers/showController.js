@@ -10,13 +10,21 @@ router.get("/", (req,res) => {
     var allShowObject = {
       shows: data
     };
-    console.log(allShowObject);
     res.render("index", allShowObject);
   });
 });
 
+router.get("/archive", (req, res) => {
+    show.all(data => {
+        var allShowObject = {
+            shows: data
+        };
+        res.render("archive", allShowObject);
+    })
+})
+
 router.put("/api/shows/:id", (req,res) => {
-    show.update(req.params.id, data => {
+    show.update('watched', req.params.id, 1, data => {
         res.json(data);
     })
 })
@@ -26,6 +34,19 @@ router.post("/api/shows", (req,res) => {
       res.json(data);
     })
 
+})
+router.put("/api/shows/archive/:id", (req,res) => {
+    show.update('archived', req.params.id, 1, data => {
+        res.json(data);
+    })
+})
+
+router.put("/api/shows/unArchive/:id", (req,res) => {
+    show.update('archived', req.params.id, 0, data => {
+        show.update('watched', req.params.id, 0, data => {
+            res.json(data);
+        })
+    })
 })
 
 

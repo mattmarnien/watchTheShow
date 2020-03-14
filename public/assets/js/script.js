@@ -1,7 +1,6 @@
 $(function () {
     $(".changeWatched").on("click", function (event) {
         let id = $(this).data("id");
-        let show = $(this).data("name");
         $.ajax("api/shows/" + id, {
             type: "PUT"
         }).then(
@@ -30,4 +29,26 @@ $("#addButton").on("click", function(event){
         }
     )
 }
+})
+
+$(".archive").on("click", function(event){
+        let id = $(this).data("id");
+        $.ajax("api/shows/archive/" + id, {
+            type: "PUT"
+        }).then(
+            function () {
+                location.reload();
+            }
+    )
+})
+
+$(".backToWatchList").on("click", function(event){
+    let id = $(this).data("id");
+    $.ajax("api/shows/unArchive/" + id, {
+        type: "PUT"
+    }).then(
+        function () {
+            location.reload();
+        }
+)
 })
