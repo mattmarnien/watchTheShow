@@ -1,0 +1,80 @@
+#jumbo {
+    height: 220px;
+    background-color: cornflowerblue;
+    color:white;
+}
+
+#jumboTitle{
+    padding-bottom: 25px;
+}
+
+.tvIcon {
+    margin-left: 25px;
+    height: 100px;
+    width: 100px;
+}
+
+.btn-search {
+    background-color:rgb(196, 195, 195);
+    
+    color:  #e05b49;;
+}
+@media (max-width: 770px){
+    #jumbo {
+        height: 200px;
+    
+
+    }
+    h1 {
+        font-size: xx-large !important;
+    }
+    #jumboTitle{
+        padding-bottom: 10px;
+        font-size: medium;
+    }
+    .tvIcon {
+        height: 50px;
+        width: 50px;
+    }
+
+}
+@media (max-width: 500px){
+    #jumbo {
+        
+        height: 150px;
+
+    }
+    h1 {
+        font-size: xx-large !important;
+    }
+    #jumboTitle{
+        padding-bottom: 10px;
+        font-size: medium;
+    }
+    .tvIcon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 321px){
+    #jumbo {
+        
+        height: 150px;
+
+    }
+    h1 {
+        font-size: x-large !important;
+    }
+    h4 {
+        font-size: small !important;
+    }
+    #jumboTitle{
+        padding-bottom: 10px;
+        font-size: medium;
+    }
+    .tvIcon {
+        height: 50px;
+        width: 50px;
+    }
+}

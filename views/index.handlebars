@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row holderDiv">
+        <div id="toWatchDiv" class='col-6 text-left'>
+            <ul>
+                {{#each shows}}
+                    {{#unless watched}}
+                    <li>{{name}}
+                        <button class="changeWatched" data-id="{{id}}" data-name="{{name}}"">Watched</button>
+                    </li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div id="watchedDiv" class='col-6 text-right'>
+            
+              {{#each shows}}
+                    {{#if watched}}
+                     <p>{{name}}
+                        
+                    </p>
+                    {{/if}}
+                {{/each}}
+    
+        </div>
+    </div>
+</div>
