@@ -78,6 +78,9 @@
     .buttonDiv{
         width: 100%;
     }
+    .backToWatchList {
+        font-size: small;
+    }
 
 }
 @media (max-width: 576px){
@@ -101,6 +104,9 @@
         padding-right: 50px;
     }
     #toWatchDiv {
+        padding-right: 50px;
+    }
+    #archivedDiv {
         padding-right: 50px;
     }
 }
