@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row holderDiv">
-        <div id="toWatchDiv" class='col-xl-6 col-lg- 6 col-md-8 col-sm-8 col-xs-8'>
+        <div id="toWatchDiv" class='col-sm-6'>
             <h2>Watch-list:</h2>
             <br>
 
@@ -8,7 +8,7 @@
             {{#unless archived}}
             {{#unless watched}}
             <div class="showDiv row">
-                <div class="nameDiv col-10">
+                <div class="nameDiv col-8">
                     <p>{{name}}</p>
                 </div>
                 <div class="buttonDiv col-2"> <button class="changeWatched btn" data-id="{{id}}">Watch <i
@@ -23,14 +23,14 @@
 
 
 
-        <div id="watchedDiv" class='col-xl-6 col-lg- 6 col-md-8 col-sm-8 col-xs-8'>
+        <div id="watchedDiv" class='col-sm-6'>
             <h2>Watched:</h2>
             <br>
             {{#each shows}}
             {{#unless archived}}
             {{#if watched}}
             <div class="showDiv row">
-                <div class="nameDiv col-10">
+                <div class="nameDiv col-8">
                     <p>{{name}}</p>
                 </div>
                 <div class="buttonDiv col-2"> <button class="archive btn" data-id="{{id}}">Archive <i

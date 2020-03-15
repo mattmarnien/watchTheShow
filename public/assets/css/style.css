@@ -72,7 +72,11 @@
     }
     .nameDiv {
         font-size: small !important;
+        text-align: center;
 
+    }
+    .buttonDiv{
+        width: 100%;
     }
 
 }
@@ -93,12 +97,12 @@
         height: 50px;
         width: 50px;
     }
-    /* #watchedDiv{
-        padding-right: 20px;
+    #watchedDiv{
+        padding-right: 50px;
     }
     #toWatchDiv {
-        padding-right: 20px;
-    } */
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 321px){
