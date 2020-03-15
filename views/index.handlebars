@@ -1,54 +1,61 @@
 <div class="container">
     <div class="row holderDiv">
-        <div id="toWatchDiv" class='ol-xl-6 col-lg- 6 col-md-6 col-sm-10 col-xs-10 text-center'>
+        <div id="toWatchDiv" class='col-xl-6 col-lg- 6 col-md-8 col-sm-8 col-xs-8'>
             <h2>Watch-list:</h2>
             <br>
-        
-                {{#each shows}}
-                {{#unless archived}}
-                    {{#unless watched}}
-                    <div class="showDiv row">
-                        <div class="nameDiv col-10"><p>{{name}}</p></div>
-                        <div class="buttonDiv col-2"> <button class="changeWatched btn" data-id="{{id}}">Watch <i class="far fa-eye"></i></button></div>
-                    </div>
-                    {{/unless}}
-                    {{/unless}}
-                {{/each}}
-            
-        </div>
-     
 
-        
-       
-        <div id="watchedDiv" class='col-xl-6 col-lg- 6 col-md-6 col-sm-10 col-xs-10 text-center'>
+            {{#each shows}}
+            {{#unless archived}}
+            {{#unless watched}}
+            <div class="showDiv row">
+                <div class="nameDiv col-10">
+                    <p>{{name}}</p>
+                </div>
+                <div class="buttonDiv col-2"> <button class="changeWatched btn" data-id="{{id}}">Watch <i
+                            class="far fa-eye"></i></button></div>
+            </div>
+            {{/unless}}
+            {{/unless}}
+            {{/each}}
+
+        </div>
+
+
+
+
+        <div id="watchedDiv" class='col-xl-6 col-lg- 6 col-md-8 col-sm-8 col-xs-8'>
             <h2>Watched:</h2>
-             <br>
-              {{#each shows}}
-              {{#unless archived}}
-                    {{#if watched}}
-                     <div class="showDiv row">
-                        <div class="nameDiv col-10"><p>{{name}}</p></div>
-                        <div class="buttonDiv col-2"> <button class="archive btn" data-id="{{id}}">Archive <i class="fas fa-archive"></i></button></div>
-                    </div>
-                    {{/if}}
-                    {{/unless}}
-                {{/each}}
-    
+            <br>
+            {{#each shows}}
+            {{#unless archived}}
+            {{#if watched}}
+            <div class="showDiv row">
+                <div class="nameDiv col-10">
+                    <p>{{name}}</p>
+                </div>
+                <div class="buttonDiv col-2"> <button class="archive btn" data-id="{{id}}">Archive <i
+                            class="fas fa-archive"></i></button></div>
+            </div>
+            {{/if}}
+            {{/unless}}
+            {{/each}}
+
         </div>
     </div>
 
 
-<form id="addForm">
-    <div class="form-group row">
-     
-      <input type="text" class="form-control col-lg-11 col-sm-12 " id="addInput" aria-describedby="addShow" placeholder="Add a show to watch">
-      <button class=" col-lg-1 btn btn-large btn-search" id="addButton"><i class="fas fa-tv fa-2x addIcon"></i></button>
-    </div>
-    
-  </form>
-  <div class="row">
-  <div class="buttonDiv col-4"> <a href="/archive"><button class="toArchive btn">Go to the Archive <i class="fas fa-archive"></i></button></a></div>
-    </div>
-  </div>
+    <form id="addForm">
+        <div class="form-group row">
 
-   
+            <input type="text" class="form-control col-lg-11 col-sm-12 " id="addInput" aria-describedby="addShow"
+                placeholder="Add a show to watch">
+            <button class=" col-lg-1 btn btn-large btn-search" id="addButton"><i
+                    class="fas fa-tv fa-2x addIcon"></i></button>
+        </div>
+
+    </form>
+    <div class="row">
+        <div class="buttonDiv col-4"> <a href="/archive"><button class="toArchive btn">Go to the Archive <i
+                        class="fas fa-archive"></i></button></a></div>
+    </div>
+</div>

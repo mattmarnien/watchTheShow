@@ -76,7 +76,7 @@
     }
 
 }
-@media (max-width: 500px){
+@media (max-width: 576px){
     #jumbo {
         
         height: 150px;
@@ -93,6 +93,12 @@
         height: 50px;
         width: 50px;
     }
+    /* #watchedDiv{
+        padding-right: 20px;
+    }
+    #toWatchDiv {
+        padding-right: 20px;
+    } */
 }
 
 @media (max-width: 321px){
