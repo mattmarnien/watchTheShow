@@ -64,6 +64,15 @@
     color: white;
 }
 
+@media (max-width: 1200px){
+ 
+    .deleteButton{
+        margin-left: 0;
+        width: 115px;
+    }
+
+}
+
 @media (max-width: 770px){
     #jumbo {
         height: 200px;
@@ -91,7 +100,14 @@
     }
     .backToWatchList {
         font-size: small;
+        width: 100px;
     }
+    .deleteButton{
+        margin-left: 0;
+        width: 100px;
+    }
+
+
 
 }
 @media (max-width: 576px){
@@ -120,6 +136,9 @@
     #archivedDiv {
         padding-right: 50px;
     }
+    .deleteButton{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 321px){
@@ -141,5 +160,8 @@
     .tvIcon {
         height: 50px;
         width: 50px;
+    }
+    .deleteButton{
+        margin-left: 0;
     }
 }
