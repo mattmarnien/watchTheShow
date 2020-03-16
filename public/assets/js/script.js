@@ -81,15 +81,20 @@ $('.showDiv').on("click", function(event){
 // compiles show info, puts it into elements and posts to the page
 function genShowInfo(data, target){
     let newDiv= $("<div class='removable'>");
-    let title = $("<h1>");
-    title.text(data.Title);
-    let poster = $(`<img src='${data.Poster}' style='width:100px;height:200px;'>`)
+    let imageRow= $("<div class='row'>");
+    let poster = $(`<img src='${data.Poster}' style='width:100px;height:150px;'>`)
     let rating = $("<h5>");
     rating.text(data.Rated);
     let genre = $("<h5>");
     genre.text(data.Genre);
-    let plot = $("<p>");
-    plot.text(data.Plot);
+    let plot = $("<p class ='col-6'>");
+    plot.text(data.Plot);    
     target.append(newDiv);
-    newDiv.append(title, poster, rating, genre, plot);
+    imageRow.append(poster, plot)
+    newDiv.append(imageRow, rating, genre);
+    if(data.Seasons){
+        let seasons = $("<h6>");
+        seasons.text("Seasons: " + data.Seasons);
+        newDiv.append(seasons);
+        }
 }
