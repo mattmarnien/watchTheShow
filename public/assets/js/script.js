@@ -94,8 +94,7 @@ function genShowInfo(data, target){
     let plot = $("<p class ='col-6'>");
     plot.text(data.Plot);    
     target.append(newDiv);
-    imageRow.append(poster, plot)
-    newDiv.append(imageRow, rating, genre);
+    newDiv.append(poster, plot, rating, genre);
     if(data.Seasons){
         let seasons = $("<h6>");
         seasons.text("Seasons: " + data.Seasons);

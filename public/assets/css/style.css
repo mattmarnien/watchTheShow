@@ -53,10 +53,7 @@
     background-color: #e05b49;
 
 }
-.removable {
-    border: darkgrey;
-    border-radius: 3px;;
-}
+
 @media (max-width: 770px){
     #jumbo {
         height: 200px;
