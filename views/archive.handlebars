@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row holderDiv">
       
-        <div id="archivedDiv" class='col-12 text-left'>
+        <div id="archivedDiv" class='col-12 text-left' >
      
               {{#each shows}}
                     {{#if archived}}
-                     <div class="showDiv row">
+                     <div class="showDiv row" data-name='{{name}}'>
                         <div class="nameDiv col-lg-10 col-6"><h4>{{name}}</h4></div>
                         <div class="buttonDiv col-2"> <button class="backToWatchList btn" data-id="{{id}}">Watch Again</button></div>
                     </div>
