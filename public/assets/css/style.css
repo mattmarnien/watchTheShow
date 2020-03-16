@@ -54,6 +54,10 @@
 
 }
 
+.imageRow{
+    font-size: small;
+}
+
 @media (max-width: 770px){
     #jumbo {
         height: 200px;

@@ -85,7 +85,7 @@ $(document).on("click", function(event){
 // compiles show info, puts it into elements and posts to the page
 function genShowInfo(data, target){
     let newDiv= $("<div class='removable'>");
-    let imageRow= $("<div class='row'>");
+    let imageRow= $("<div class='row imageRow'>");
     let poster = $(`<img src='${data.Poster}' style='width:100px;height:150px;'>`)
     let rating = $("<h5>");
     rating.text(data.Rated);
@@ -94,7 +94,8 @@ function genShowInfo(data, target){
     let plot = $("<p class ='col-6'>");
     plot.text(data.Plot);    
     target.append(newDiv);
-    newDiv.append(poster, plot, rating, genre);
+    imageRow.append(poster, plot)
+    newDiv.append(imageRow, rating, genre);
     if(data.Seasons){
         let seasons = $("<h6>");
         seasons.text("Seasons: " + data.Seasons);
