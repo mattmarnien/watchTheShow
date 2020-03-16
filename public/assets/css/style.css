@@ -59,6 +59,7 @@
 }
 
 .deleteButton{
+    margin-left: 5px;
     background-color: rgb(219, 86, 86);
     color: white;
 }
