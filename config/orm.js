@@ -16,12 +16,19 @@ const orm = {
         })
     },
 
-    create: function(table, columns, values, cb) {
-        connection.query("INSERT INTO ?? (??) VALUES(?)", [table, columns, values], function(err, data) {
+    create: function(table, column, values, cb) {
+        connection.query("INSERT INTO ?? (??) VALUES(?)", [table, column, values], function(err, data) {
             if(err) throw err;
             cb(data);
         })
-    }
+    },
+    delete: function(table, whereColumn, whereValue, cb) {
+    
+        connection.query("DELETE FROM ?? WHERE ?? = ?", [table, whereColumn, whereValue], function(err, data) {
+          if (err) throw err;    
+          cb(data);
+        });
+      }
 }
 
 

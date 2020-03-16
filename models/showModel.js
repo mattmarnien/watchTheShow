@@ -16,7 +16,13 @@ const show = {
         orm.create("shows", "name", value, (data) => {
             cb(data);
         })
+    },
+    delete: function(id, cb){
+        orm.delete("shows", "id", id, (data) => {
+        cb(data);
+        })
     }
+    
 }
 
 module.exports = show;

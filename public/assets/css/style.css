@@ -46,16 +46,21 @@
 
 .toIndex {
     color: white ;
-    background-color: cornflowerblue;
+    background-color: #e05b49;
 }
 .backToWatchList {
     color: white ;
-    background-color: #e05b49;
+    background-color: cornflowerblue;
 
 }
 
 .imageRow{
     font-size: small;
+}
+
+.deleteButton{
+    background-color: rgb(219, 86, 86);
+    color: white;
 }
 
 @media (max-width: 770px){

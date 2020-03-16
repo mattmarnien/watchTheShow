@@ -6,8 +6,8 @@
               {{#each shows}}
                     {{#if archived}}
                      <div class="eachShowDiv row">
-                        <div class="showDiv col-lg-10 col-6" data-name='{{name}}'><h4>{{name}}</h4></div>
-                        <div class="buttonDiv col-2"> <button class="backToWatchList btn" data-id="{{id}}">Watch Again</button></div>
+                        <div class="showDiv col-lg-9 col-6" data-name='{{name}}'><h4>{{name}}</h4></div>
+                        <div class="buttonDiv col-3"> <button class="backToWatchList btn" data-id="{{id}}">Watch Again</button><button class ="btn deleteButton" data-id='{{id}}'>Delete <i class="far fa-times-circle fa-lg"></i></button></div>
                     </div>
                     <hr>
                     {{/if}}

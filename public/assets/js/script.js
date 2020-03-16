@@ -77,6 +77,21 @@ $('.showDiv').on("click", function(event){
     })
 })
 
+// clicking the X deletes a show from the archive
+
+$(".deleteButton").on("click", function(event) {
+    let id = $(this).data("id")
+    console.log(id);
+    $.ajax("api/shows/delete/" + id, {
+        type: "DELETE"
+    }).then(
+        function () {
+            location.reload();
+        }
+)
+
+})
+
 $(document).on("click", function(event){
     $(".removable").remove();
 })

@@ -49,5 +49,12 @@ router.put("/api/shows/unArchive/:id", (req,res) => {
     })
 })
 
+router.delete("/api/shows/delete/:id", (req,res) => {
+    console.log(req.params.id);
+    show.delete(req.params.id, data => {
+        res.json(data);
+    })
+})
+
 
 module.exports = router;
