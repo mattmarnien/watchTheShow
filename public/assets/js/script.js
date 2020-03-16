@@ -77,6 +77,10 @@ $('.showDiv').on("click", function(event){
     })
 })
 
+$(document).on("click", function(event){
+    $(".removable").remove();
+})
+
 
 // compiles show info, puts it into elements and posts to the page
 function genShowInfo(data, target){
