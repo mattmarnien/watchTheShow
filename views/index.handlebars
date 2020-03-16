@@ -7,8 +7,8 @@
             {{#each shows}}
             {{#unless archived}}
             {{#unless watched}}
-            <div class="showDiv row" data-name='{{name}}'>
-                <div class="nameDiv col-8">
+            <div class="row eachShowDiv">
+                <div class="showDiv col-8"  data-name='{{name}}'>
                     <p>{{name}}</p>
                 </div>
                 <div class="buttonDiv col-2"> <button class="changeWatched btn" data-id="{{id}}">Watch <i
@@ -29,8 +29,8 @@
             {{#each shows}}
             {{#unless archived}}
             {{#if watched}}
-            <div class="showDiv row" data-name='{{name}}'>
-                <div class="nameDiv col-8">
+            <div class="eachShowDiv row" >
+                <div class="showDiv col-8" data-name='{{name}}'>
                     <p>{{name}}</p>
                 </div>
                 <div class="buttonDiv col-2"> <button class="archive btn" data-id="{{id}}">Archive <i

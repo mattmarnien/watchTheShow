@@ -19,10 +19,10 @@
     
     color:  #e05b49;;
 }
-.showDiv {
+.eachShowDiv {
     margin: 5px;
 }
-.nameDiv{
+.showDiv{
     font-size: large;;
     font-weight: bold;
 }
